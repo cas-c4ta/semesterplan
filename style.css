@@ -3,14 +3,46 @@
   font-size: 100%;
 }
 
+body {
+  padding: 1rem;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+header {
+  margin-bottom: 1rem;
+}
+
 h2 {
-  font-size: unset;
+  font-size: 1.75rem;
+ }
+
+h1, h3 { font-size: unset; margin: unset; }
+
+ul {
+  padding-left: 0.75rem;
 }
 
 h2, ul, p { margin: 0.5rem 0; }
-h2 { margin-top: 1.25rem; }
 p, li,
+.date,
 .teacher,
-.room { font-size: 0.75rem; font-weight: bold; }
+.room {
+  font-size: 0.75rem;
+  font-weight: bold;
+ }
 .room {  margin-bottom: 0; }
 .teacher { margin-top: 0; }
+.week { margin-bottom: 2.5rem; }
+
+.date {
+  background: black;
+  color:white;
+  padding: 0.25rem;
+  display: inline-block;
+  letter-spacing: 0.06125rem;
+  margin-bottom: 0;
+}
