@@ -62,7 +62,29 @@ ul, p { margin: 0.5rem 0; }
 }
 
 @media (min-width: 700px) {
-  :root { font-size: 150% }
+  :root { font-size: 130% }
+  body {
+    padding: 2rem 5% 3rem 3rem;
+    display: grid;
+    grid-gap: 4rem 3vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  header, footer, main, aside { margin: 0; }
+  header { grid-row: 1/2; }
+  header,
+  footer { grid-column: 1/-1; }
+  main { 
+    grid-column: 1/2;
+    grid-row: 2/-1;
+  }
+  aside { 
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+    align-self: start;
+  }
+  
 }
 
 @media (prefers-color-scheme: dark) {
