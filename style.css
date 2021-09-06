@@ -18,9 +18,8 @@ body {
 header,
 aside { margin-bottom: 2.5rem; }
 
-aside p, li {
-  font-size: .75rem;
-}
+aside p,
+aside li { font-size: .75rem; }
 
 
 h1 {
