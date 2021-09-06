@@ -15,17 +15,24 @@ body {
   background-color: var(--bg-col);
 }
 
+header,
+aside { margin-bottom: 2.5rem; }
+
+aside p, li {
+  font-size: .75rem;
+}
+
+
 h1 {
   font-size: unset;
   margin: 0 0 .5rem;
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 2rem;
   margin: 0;
  }
 
-header { margin-bottom: 2.5rem; }
 
 h3 { 
   font-size: unset;
@@ -36,12 +43,6 @@ ul { padding-left: 0.75rem; }
 
 ul, p { margin: 0.5rem 0; }
 
-p, li,
-.date,
-.teacher,
-.room {
-  font-size: 0.75rem;
- }
 .room {  margin-bottom: 0; }
 .teacher { margin-top: 0; }
 .week { margin-bottom: 2.5rem; }
@@ -70,11 +71,18 @@ p, li,
     --bg-col: black;
     --fg-col: hsl(140, 90%, 50%);
     --inverse-fg: hsl(300, 100%, 45%);
-    --inverse-bg: hsl(0, 0%, 0%);
+    --inverse-fg-secondary: hsl(40, 55%, 40%);
+    --inverse-bg: hsl(0, 0%, 10%);
+    --accent-fg: hsl(40, 80%, 50%); 
     letter-spacing: .5px;
     font-weight: 400;
   }
-  h3 { color:hsl(39, 80%, 50%); }
+  h3 { color: var(--accent-fg); }
+  aside {
+    padding: .25rem .5rem;
+    background: var(--inverse-bg);
+    color: var(--inverse-fg-secondary);
+   }
   h1, h2, h3 { font-weight: unset; }
 }
 
